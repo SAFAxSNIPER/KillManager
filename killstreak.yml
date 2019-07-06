@@ -1,0 +1,17 @@
+# This is where you can change all features related to KillStreaks!
+
+KillStreaks: 
+  default: 
+    KillStreak: 5
+    Permission: "killstreak.bounty"
+    Killer: 
+    - "[msg] &6&lKR &c&lYou got %killer_killstreak% kill streaks on %victim_name%"
+    Victim: 
+    - "[actionbar] &6&lKR &9&l%killer_name% just got 5 kills on you!"
+  second: 
+    KillStreak: 2
+    Permission: "killstreak.repeat"
+    Killer: 
+    - "[msg] &6&lSECOND &c&lYou got %killer_killstreak% kill streaks on %victim_name%"
+    Victim: 
+    - "[actionbar] &6&lSECOND &9&l%killer_name% just got %killer_killstreak% kills on you!"

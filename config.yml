@@ -1,0 +1,94 @@
+# This is the main config of the plugin!
+# Spigot: https://www.spigotmc.org/resources/authors/meesperkins112.213461/
+# Discord: SAFAxSNIPER#4643
+# NOTE: Please change the sounds if you're in 1.8+ version!
+
+Prefix: "&8[&6KillManager&8] "
+Console: "&cOnly players can use this command!"
+
+PlayerNotFound: "&cCouldn't find %target%!"
+
+NoPerms:
+  MSG: "&cYou don't have enough permission!"
+  Sound:
+    Enabled: true
+    SoundName: "VILLAGER_NO"
+  Actionbar: 
+    Enabled: true
+    ActionbarMSG: "&cYou don't have enough permission!"
+
+Reload:
+  MSG: "&aReloaded the config files!"
+  Sound:
+    Enabled: true
+    SoundName: "NOTE_PLING"
+  Actionbar: 
+    Enabled: true
+    ActionbarMSG: "&aReloaded the config files!"
+
+BowHit:
+  Enabled: true
+  Permission: "killmanager.usebow"
+  BowShooter: 
+  - "[msg] &a%victim_name% is at &4%victim_health%"
+
+
+KillStreak:
+  SetKills: "&aSet %target%'s kills to %amount%"
+  SetDeaths: "&aSet %target%'s deaths to %amount%"
+  SetKillStreaks: "&aSet %target%'s kill streaks to %amount%"
+  SetHighestKillStreaks: "&aSet %target%'s highest kill streaks to %amount%"
+
+Stats: 
+  Player:
+  - "&8&m-----&r &6&lYour Stats &8&m-----"
+  - "&eKills: %killmanager_kills%"
+  - "&eDeaths: %killmanager_deaths%"
+  - "&eKillStreaks: %killmanager_killstreak%"
+  - "&eHighest KillStreaks: %killmanager_highestkillstreak%"
+  - "&8&m----------------------------"
+  
+  Target: 
+  - "&8&m-----&r &6&l%player_name%'s Stats &8&m-----"
+  - "&eKills: %killmanager_kills%"
+  - "&eDeaths: %killmanager_deaths%"
+  - "&eKillStreaks: %killmanager_killstreak%"
+  - "&eHighest KillStreaks: %killmanager_highestkillstreak%"
+  - "&8&m---------------------------------"
+
+AutoRespawn:
+  Enabled: true
+  Permission: "killmanager.autorespawn"
+  EnabledWorlds:
+  - "world"
+  - "kitpvp"
+  Actions:
+  - "[title] &e&lRespawned! %newline% &cTake revenge!"
+
+Kill: 
+  Message: 
+    Enabled: true
+    MSG: "&5%killer_name% &dkilled &5%victim_name%"
+  Exp:
+    Enabled: false
+
+# Valid actions are: [msg], [console], [op], [player], [sound], [title], [actionbar], [json]
+KillRewards:
+  default: 
+    Permission: "killmanager.default"
+    Killer: 
+    - "[msg] &c&lYou got %killer_killstreak% kill streaks!"
+    Victim: 
+    - "[msg] &cYou died by %killer_name%"
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

@@ -1,0 +1,18 @@
+name: KillManager
+version: 1.0
+author: SAFAxSNIPER
+description: "A kill managament plugin for pvp servers!"
+softdepend: [PlaceholderAPI, CombatLogX, Vault]
+main: me.safa.killmanager.KillManager
+commands: 
+  killmanager:
+    aliases: [km]
+    description: "The main command of the plugin!" 
+  leaderboard:
+    aliases: [lb, baltop]
+    description: "Gives you the leaderboard of a specified stats!"  
+  lvl:
+    aliases: [level]
+    description: "Tells your level"
+  
+   
